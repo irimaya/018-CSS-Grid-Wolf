@@ -1,0 +1,16 @@
+.wrapper {
+  grid-template-columns: 1fr;
+}
+
+.bg {
+  background: url('../img/bgm.jpg');
+}
+
+.wrapper > div:nth-of-type(5) {
+  grid-column: 1;
+}
+
+
+.wrapper > div:nth-of-type(14) {
+  grid-column: 1;
+}

@@ -1,0 +1,74 @@
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+/* Root */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main styling */
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 1px;
+  text-transform: uppercase;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-top: 20px;
+}
+
+.wrapper > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: all 0.5s ease-in;
+}
+
+.wrapper > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.bg {
+  background: url('../img/bg.jpg');
+}
+
+.bg img {
+  width: 40px;
+}
+
+.wrapper > div:nth-of-type(5) {
+  grid-column: 1/3;
+}
+
+
+.wrapper > div:nth-of-type(14) {
+  grid-column: 3/5;
+}
